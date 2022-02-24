@@ -1,6 +1,6 @@
 /** pas de kleuren aan naar eigen smaak, zorg gwn voor contrast & eenduidig thema **/
 body {
-  background-color: bisque;
+  background-color: aquamarine;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -15,7 +15,7 @@ p {
 /** onderstaande styling mag gerust verwijderd worden **/
 
 .menu a:visited {
-  color: rgb(116, 29, 29);
+  color: black;
   background-color: inherit;
 }
 
