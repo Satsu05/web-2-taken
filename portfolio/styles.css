@@ -1,6 +1,6 @@
 /** pas de kleuren aan naar eigen smaak, zorg gwn voor contrast & eenduidig thema **/
 body {
-  background-color: aquamarine;
+  background-color: darkslategray;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -15,7 +15,7 @@ p {
 /** onderstaande styling mag gerust verwijderd worden **/
 
 .menu a:visited {
-  color: black;
+  color: honeydew;
   background-color: inherit;
 }
 
@@ -29,12 +29,13 @@ ul.menu {
 }
 
 hr {
-  border-top: 2px solid rgb(116, 29, 29);
+  border-top: 2px solid black(116, 29, 29);
 }
 
-.centreer {
-  display: flex;
-}
+img {width:400px;}
+.image {display: flex; justify-content: center;}
 
-img {width: 600px; display: flex; }
-video {width: 600px; display: flex;}
+.title {font-weight: bold; color: skyblue;}
+
+h1 {color: honeydew;}
+ul {color: honeydew;}
