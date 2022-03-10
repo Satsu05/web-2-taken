@@ -35,3 +35,6 @@ hr {
 .centreer {
   display: flex;
 }
+
+img {width: 600px; display: flex; }
+video {width: 600px; display: flex;}
