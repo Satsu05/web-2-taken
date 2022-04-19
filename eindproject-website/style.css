@@ -6,12 +6,6 @@
     font-family: 'Poppins' , sans-serif;
 }
 
-.main {
-    width: 100%;
-    height: 100vh;
-    background: #000;
-}
-
 .menu {
     width: 17%;
     height: 100%;
@@ -20,8 +14,18 @@
     top: 0;
     left: 0;
     padding: 20px;
+    border-right-style:solid;
 }
 
 img {
     width: 100%;
+}
+
+summary:hover {background-color: blue;}
+summary {cursor:pointer}
+
+
+footer {
+    margin-left:20%;
+    margin-top:1%
 }
