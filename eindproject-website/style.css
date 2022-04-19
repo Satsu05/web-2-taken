@@ -9,7 +9,7 @@
 .menu {
     width: 17%;
     height: 100%;
-    background: red;
+    background: aquamarine;
     position: fixed;
     top: 0;
     left: 0;
@@ -17,15 +17,39 @@
     border-right-style:solid;
 }
 
-img {
+#logo {
     width: 100%;
 }
 
-summary:hover {background-color: blue;}
+summary:hover {background-color: darkcyan;}
 summary {cursor:pointer}
 
 
 footer {
     margin-left:20%;
     margin-top:1%
+}
+
+li {
+    background-color: aliceblue;
+    border-style: solid;
+    margin:5%;
+    margin-bottom: 10%;
+}
+
+#menu {padding-left: 32%;}
+#ins {padding-left: 16%;}
+#wt {padding-left: 6%;}
+#at {padding-left: 28%;}
+#theo {padding-left: 18%;}
+#act {padding-left: 20%;}
+#co {padding-left: 27%;}
+
+ul {padding:15%}
+
+.TKI {
+    width:20%;
+}
+.SP {
+    width:25%
 }
