@@ -1,55 +1,87 @@
 * {
-    padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     list-style: none;
     font-family: 'Poppins' , sans-serif;
 }
 
+
 .menu {
-    width: 17%;
-    height: 100%;
-    background: aquamarine;
-    position: fixed;
-    top: 0;
+    background: beige;
     left: 0;
     padding: 20px;
     border-right-style:solid;
 }
 
 #logo {
-    width: 100%;
+    width: 300px;
 }
 
 summary:hover {background-color: darkcyan;}
 summary {cursor:pointer}
 
 
-footer {
-    margin-left:20%;
-    margin-top:1%
+aside {
+    padding:25px;
+    flex-grow: 1;
 }
 
 li {
     background-color: aliceblue;
     border-style: solid;
-    margin:5%;
-    margin-bottom: 10%;
+    margin:5px;
+    
+    text-align: center;
+    padding: 5px;
 }
 
-#menu {padding-left: 32%;}
-#ins {padding-left: 16%;}
-#wt {padding-left: 6%;}
-#at {padding-left: 28%;}
-#theo {padding-left: 18%;}
-#act {padding-left: 20%;}
-#co {padding-left: 27%;}
 
-ul {padding:15%}
+
+ul {padding:5px}
 
 .TKI {
     width:20%;
 }
 .SP {
     width:25%  
+}
+
+footer {
+    border-top-style: solid;
+    padding:20px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+details > summary {
+    list-style-type: '▶️';
+}
+
+details[open] > summary {
+    list-style-type: '🔽';
+}
+details {
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+
+details[open] > summary {
+    margin-bottom: 0.5rem;
 }
