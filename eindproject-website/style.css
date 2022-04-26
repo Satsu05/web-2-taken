@@ -1,20 +1,22 @@
 * {
-    margin: 0px;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'Poppins' , sans-serif;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Poppins' , sans-serif;
 }
 
 
 .menu {
-    background: beige;
-    left: 0;
-    padding: 20px;
-    border-right-style:solid;
+  left: 0;
+  padding: 20px;
+  border-right-style:solid;
 }
 
+#logoJP {
+  height:70px;
+}
 #logo {
-    width: 300px;
+  width: 200px;
 }
 
 summary:hover {background-color: darkcyan;}
@@ -22,17 +24,17 @@ summary {cursor:pointer}
 
 
 aside {
-    padding:25px;
-    flex-grow: 1;
+  padding:25px;
+  flex-grow: 1;
 }
 
 li {
-    background-color: aliceblue;
-    border-style: solid;
-    margin:5px;
-    
-    text-align: center;
-    padding: 5px;
+  background-color: aliceblue;
+  border-style: solid;
+  margin:5px;
+  
+  text-align: center;
+  padding: 5px;
 }
 
 
@@ -40,48 +42,116 @@ li {
 ul {padding:5px}
 
 .TKI {
-    width:20%;
+  width:20%;
 }
 .SP {
-    width:25%  
+  width:25%  
 }
 
 footer {
-    border-top-style: solid;
-    padding:20px;
-    text-align: center;
+  border-top-style: solid;
+  padding:20px;
+  text-align: center;
 }
 
 .flex {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .contact {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 details > summary {
-    list-style-type: '▶️';
+  list-style-type: '▶️';
 }
 
 details[open] > summary {
-    list-style-type: '🔽';
+  list-style-type: '🔽';
 }
 details {
-    border: 1px solid gray;
-    border-radius: 0.2rem;
-    padding: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
 }
 
 details[open] > summary {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.crossfade {opacity:0.5;}
+.crossfade > figure {
+  animation: imageAnimation 30s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+}
+.crossfade > figure:nth-child(1) { background-image: url('animalbox.jpg'); }
+.crossfade > figure:nth-child(2) {
+  animation-delay: 6s;
+  background-image: url('crayondrawing.jpeg');
+}
+.crossfade > figure:nth-child(3) {
+  animation-delay: 12s;
+  background-image: url('greypainter.jpeg');
+}
+.crossfade > figure:nth-child(4) {
+  animation-delay: 18s;
+  background-image: url('machine.jpg');
+}
+.crossfade > figure:nth-child(5) {
+  animation-delay: 24s;
+  background-image: url('metalbuild.jpg');
+}
+.crossfade > figure:nth-child(6) {
+  animation-delay: 30s;
+  background-image: url('moretags.jpg');
+}
+@keyframes 
+imageAnimation {  0% {
+ animation-timing-function: ease-in;
+ opacity: 0;
+}
+ 8% {
+ animation-timing-function: ease-out;
+ opacity: 1;
+}
+ 17% {
+ opacity: 1
+}
+ 25% {
+ opacity: 0
+}
+ 100% {
+ opacity: 0
+}
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
