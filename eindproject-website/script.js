@@ -1,14 +1,30 @@
-var slideIndex = 0;
-carousel();
+backgroundCount = 0;
+currentFrame = 1;
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 5000); // Change image every 5 seconds
+function restartTimer() {
+  timePrompt = setTimeout(function() {
+    changeImage();
+
+  }, 6000);
 }
+
+function changeImage() {
+  backgroundCount++;
+  imageUrl = "url('https://unsplash.it/1200/750/?random&" + backgroundCount + "')";
+
+  if (currentFrame == 1) {
+    currentName = "backgroundImage1";
+    hideName = "backgroundImage2";
+    currentFrame = 2;
+  } else {
+    currentName = "backgroundImage2";
+    hideName = "backgroundImage1";
+    currentFrame = 1;
+  }
+  document.getElementById(currentName).style.backgroundImage = imageUrl;
+  document.getElementById(hideName).className = 'hide';
+  document.getElementById(currentName).className = 'show';
+
+  restartTimer();
+}
+restartTimer();
